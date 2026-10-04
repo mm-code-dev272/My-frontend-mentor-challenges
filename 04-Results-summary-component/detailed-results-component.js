@@ -46,11 +46,17 @@ class results extends HTMLElement {
     color: hsl(240, 33%, 71%);
     font-weight: 800;
     }
-    
+    @media(max-width:766px) and (min-height:853px){
+    .detailedResults {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+        }
     @media(min-width : 767px) {
     .detailedResults {
     padding : 1.2rem
     }
+    
     }
         </style>
         <div class="detailedResults">
