@@ -84,7 +84,6 @@ body {
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    white-space: nowrap;
     border: 0.125rem solid var(--brand-color);
     border-radius: 0.75rem;
     cursor: pointer;
@@ -109,12 +108,8 @@ body {
         padding: 2.5rem 1rem 2rem;
     }
 
-    .welcome-h1 {
-        margin-bottom: 2rem;
-    }
-
     .workout-btn {
-        padding: 1rem 1.25rem;
-        font-size: 1rem;
+        padding: 1rem 1rem;
+        font-size: 0.95rem;
     }
 }
