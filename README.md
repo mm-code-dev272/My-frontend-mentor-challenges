@@ -1,29 +1,24 @@
-# 🔥 HTML & CSS Workouts
+<h1 align="center">🔥 HTML & CSS Workout</h1>
 
-A collection of HTML & CSS exercises from [Frontend Mentor](https://www.frontendmentor.io/challenges) to improve frontend skills. From easy to hard.
-
----
-
-## 📌 [Live Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/)
+<p align="center">A collection of HTML & CSS exercises from <a href="(https://www.frontendmentor.io/challenges)">Frontend Mentor</a> to improve frontend skills. From easy to hard. This repository also includes a custom-built portfolio page (index.html) that acts as a central hub. Each completed challenge is linked to its own live demo via a button on this page. This page is updated with every new project pushed to the repository.
+</p>
 
 ---
 
-## 📁 Exercises
+### 📌 [Live Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/)
 
-1. code : [QR code component](./01-qr-code-component)
+   You can see all my Frontend Mentor solutions in one place.
 
-   This is a solution to the [QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) Frontend Mentor challenge.
+---
 
-2. code : [Blog preview card](./02-Blog-preview-card)
+### 📁 Exercises
 
-   This is a solution to the [Blog preview card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) Frontend Mentor challenge.   
-
-3. code : [Social links profile](./03-social-links-profile-main/)
-
-   This is a solution to the [Social links profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) Frontend Mentor challenge.
-
-4. code : [Results summary component](./04-Results-summary-component/)
-
-   This is a solution to the [Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) Frontend Mentor challenge.
+| # | Challenge |Frontend Mentor Link|Technologies|Live Demo|Code|
+|:--------:|:------|:------|:------|:------:|:------:|
+|0|My Portfolio Hub (Landing Page)||HTML , CSS|[Main](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/)|[index](index.html) & [index-styles](index-styles.css)|
+| 1 | QR Code Component |[QR Code Component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)| HTML , CSS |[Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/01-qr-code-component/qr-code-component.html)|[Code](./01-qr-code-component)|
+| 2 | Blog Preview Card |[Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)| HTML , CSS |[Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/02-Blog-preview-card/Blog-preview-card.html)|[Code](./02-Blog-preview-card)|
+| 3 | Social Links Profile |[Social Links Profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)| HTML , CSS |[Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/03-social-links-profile-main/social-links-profile-main.html)|[Code](./03-social-links-profile-main/)|
+| 4 | Results Summary Component |[Results Summary Component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)| HTML , CSS , JS |[Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/04-Results-summary-component/Results-summary-component.html)|[Code](./04-Results-summary-component/)|
 
 
