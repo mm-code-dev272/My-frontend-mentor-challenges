@@ -1,6 +1,6 @@
 <h1 align="center">🔥 HTML & CSS Workout</h1>
 
-<p align="center">A collection of HTML & CSS exercises from <a href="(https://www.frontendmentor.io/challenges)">Frontend Mentor</a> to improve frontend skills. From easy to hard. This repository also includes a custom-built portfolio page (index.html) that acts as a central hub. Each completed challenge is linked to its own live demo via a button on this page. This page is updated with every new project pushed to the repository.
+<p align="center">A collection of HTML & CSS exercises from <a href="https://www.frontendmentor.io">Frontend Mentor</a> to improve frontend skills. From easy to hard. This repository also includes a custom-built portfolio page (index.html) that acts as a central hub. Each completed challenge is linked to its own live demo via a button on this page. This page is updated with every new project pushed to the repository.
 </p>
 
 ---
