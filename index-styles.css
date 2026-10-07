@@ -1,115 +1,59 @@
-:root {
-    --emphasis: #704214;
-    --energy: #711423;
-    --brand-color: #617114;
-
-    --bg-light: #c8cfa8;
-    --text-dark: #2a1f14;
-
-    --btn-color: var(--brand-color);
-    --my-white: #ffffff;
-    --btn-shadow: rgba(113, 20, 35, 0.35);
-
-    --h1-gradient: linear-gradient(135deg, var(--emphasis) 0%,
-            var(--energy) 50%,
-            var(--brand-color) 100%);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
-    font-family: 'Outfit', sans-serif;
-    min-height: 100vh;
-    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 4rem 2rem 2rem;
-    background: var(--bg-light);
-    color: var(--text-dark);
+    background-color: #e8e8e8;
+    font-family: 'Outfit', sans-serif;
 }
 
 .welcome-h1 {
-    font-size: clamp(1.75rem, 6vw, 3rem);
-    font-weight: 900;
-    letter-spacing: -0.03125rem;
-    margin-bottom: 3rem;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    /* 20px at 350px viewport → 35px at 1440px viewport */
+    font-size: clamp(2rem, 1.5183rem + 1.3761vw, 3.5rem);
     text-align: center;
-    line-height: 1.2;
-    background: var(--h1-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    max-width: 100%;
-    word-wrap: break-word;
 }
 
-.welcome-h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 6.25rem;
-    height: 0.25rem;
-    background: linear-gradient(90deg, var(--brand-color), var(--energy));
-    border-radius: 0.625rem;
-}
-
-.workout-list {
-    list-style: none;
+.container {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    width: 100%;
-    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
-.workout-btn {
-    display: block;
-    width: 100%;
-    padding: 1.1rem 2rem;
-    background-color: var(--my-white);
-    color: var(--emphasis);
+button {
+    width: 30rem;
+    color: #090909;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
     font-family: 'Outfit', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
     text-decoration: none;
-    text-align: center;
-    border: 0.125rem solid var(--brand-color);
-    border-radius: 0.75rem;
+    border-radius: 1.8rem;
+    background: #e8e8e8;
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease,
-        color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 0.1rem solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow:
+        6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
 }
 
-.workout-btn:hover {
-    background-color: var(--energy);
-    color: var(--my-white);
-    border-color: var(--energy);
-    transform: scale(1.06);
-    box-shadow: 0 0.625rem 1.5625rem var(--btn-shadow);
-}
-
-.workout-btn:active {
-    transform: scale(1.02);
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 2.5rem 1rem 2rem;
-    }
-
-    .workout-btn {
-        padding: 1rem 1rem;
-        font-size: 0.95rem;
-    }
+button:hover {
+    box-shadow:
+        0px 0px 0px #c5c5c5,
+        0px 0px 0px #ffffff,
+        inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
 }

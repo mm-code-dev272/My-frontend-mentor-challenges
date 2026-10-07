@@ -4,39 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Frontend Mentor Challenges</title>
+    <title>Demo</title>
+    <link rel="stylesheet" href="test.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index-styles.css">
     <base href="https://mm-code-dev272.github.io/My-frontend-mentor-challenges/">
-
 </head>
 
 <body>
-    <h1 class="welcome-h1">Welcome to my workouts gallery</h1>
-    <ul class="workout-list">
-        <li>
-            <a class="workout-btn" href="01-qr-code-component/qr-code-component.html">
-                workout 1 : QR code component
-            </a>
-        </li>
-        <li>
-            <a class="workout-btn" href="02-Blog-preview-card/Blog-preview-card.html">
-                workout 2 : Blog preview card
-            </a>
-        </li>
-        <li>
-            <a class="workout-btn" href="03-social-links-profile-main/social-links-profile-main.html">
-                workout 3 : Social links profile
-            </a>
-        </li>
-        <li>
-            <a class="workout-btn" href="04-Results-summary-component/Results-summary-component.html">
-                workout 4 : Results summary component
-            </a>
-        </li>
-    </ul>
+    <div class="container">
+        <h1 class="welcome-h1">Welcome to my workouts gallery</h1>
+
+        <button class="btn" onclick="document.location='01-qr-code-component/qr-code-component.html'">
+            QR Code Component
+        </button>
+
+        <button class="btn" onclick="document.location='02-Blog-preview-card/Blog-preview-card.html'">
+            Blog Preview Card
+        </button>
+
+        <button class="btn" onclick="document.location='03-social-links-profile-main/social-links-profile-main.html'">
+            Social Links Profile
+        </button>
+
+        <button class="btn" onclick="document.location='04-Results-summary-component/Results-summary-component.html'">
+            Results Summary Component
+        </button>
+    </div>
 </body>
 
 </html>
