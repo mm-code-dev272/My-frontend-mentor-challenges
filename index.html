@@ -11,6 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <base href="https://mm-code-dev272.github.io/My-frontend-mentor-challenges/">
 
+    <!-- Using DeepSeek for scripts -->
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme') || 'system';
+            const effective = saved === 'system'
+                ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+                : saved;
+            document.documentElement.setAttribute('data-theme', effective);
+        })();
+    </script>
 </head>
 
 <body>
