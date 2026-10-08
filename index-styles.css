@@ -1,3 +1,36 @@
+:root {
+    color-scheme: light;
+    --bg-color: #e8e8e8;
+    --txt-color: #090909;
+    --light-shadow-u: #ffffff;
+    --light-shadow-d: #c5c5c5;
+    --box-shadow:
+        6px 6px 12px var(--light-shadow-d),
+        -6px -6px 12px var(--light-shadow-u);
+    --hover-box-shadow: 0px 0px 0px var(--light-shadow-d),
+        0px 0px 0px var(--light-shadow-u),
+        inset 4px 4px 12px var(--light-shadow-d),
+        inset -4px -4px 12px var(--light-shadow-u);
+    --svg-btn-hover-border: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --bg-color: #2a2a2a;
+    --txt-color: #ffffff;
+    --light-shadow-u: rgba(255, 255, 255, 0.4);
+    --light-shadow-d: rgba(0, 0, 0, 1);
+    --box-shadow:
+        3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+    --hover-box-shadow:
+        0px 0px 0px var(--light-shadow-d),
+        0px 0px 0px var(--light-shadow-u),
+        inset 3px 3px 10px var(--light-shadow-d),
+        inset -1px -1px 6px var(--light-shadow-u);
+    --svg-btn-hover-border: rgba(0, 0, 0, 0.455);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,22 +39,126 @@
 
 html {
     font-size: 62.5%;
+    /* 1rem = 10px */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #e8e8e8;
+    gap: 3rem;
+    background-color: var(--bg-color);
     font-family: 'Outfit', sans-serif;
 }
 
-.welcome-h1 {
-    padding-top: 3rem;
-    /* 20px at 350px viewport → 35px at 1440px viewport */
-    font-size: clamp(2rem, 1.5183rem + 1.3761vw, 3.5rem);
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.3rem solid var(--txt-color);
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    border: none;
+    width: 100%;
+    padding: clamp(1.5rem, 1.0183rem + 1.3761vw, 3rem);
+}
+
+.user {
+    /* 15px at 350px viewport → 20px at 1440px viewport */
+    font-size: clamp(1.5rem, 1.3394rem + 0.4587vw, 2rem);
     text-align: center;
+}
+
+.user:hover {
+    color: rgb(254, 148, 0);
+    transition: all 0.35s;
+}
+
+/* svg section */
+
+/* From Uiverse.io by CYBWEBALI ; note : I changed somethings for my project. */
+.svg-btn {
+    display: grid;
+    place-items: center;
+    background: var(--bg-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+
+    /* 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.svg-btn:hover {
+    box-shadow: var(--hover-box-shadow);
+
+    /* inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05); */
+
+    border: 1px solid var(--svg-btn-hover-border);
+    transform: translateY(0.5em);
+}
+
+.svg-btn svg {
+    transition: transform 0.5s;
+}
+
+.svg-btn:hover svg {
+    transform: scale(0.9);
+    fill: var(--txt-color);
+}
+
+/* svg section */
+
+.theme-btn-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.theme-btn {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    background: var(--bg-color);
+    cursor: pointer;
+    border: 0.1rem solid var(--bg-color);
+    transition: all 0.4s;
+    box-shadow: var(--box-shadow)
+}
+
+.theme-btn:hover {
+    transition: all 0.4s;
+    box-shadow: var(--hover-box-shadow);
+}
+
+.theme-icon {
+    pointer-events: none;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.welcome-title {
+    color: var(--txt-color);
+    /* 25px at 350px viewport → 40px at 1440px viewport */
+    font-size: clamp(2.5rem, 2.0183rem + 1.3761vw, 4rem);
+    text-align: center;
+    font-weight: 400;
+    /* position: sticky;
+    top: 0;
+    display: block;
+    background-color: var(--bg-color); */
+    padding: clamp(2rem, 1.8394rem + 0.4587vw, 2.5rem);
 }
 
 .container {
@@ -32,28 +169,25 @@ body {
     gap: 3rem;
 }
 
-button {
-    width: 30rem;
-    color: #090909;
-    padding: 2rem;
+.btn {
+
+    /* 250px at 350px viewport → 350px at 1440px viewport */
+    width: clamp(25rem, 21.789rem + 9.1743vw, 35rem);
+    color: var(--txt-color);
+    /* 20px at 350px viewport → 25px at 1440px viewport */
+    padding: clamp(2rem, 1.8394rem + 0.4587vw, 2.5rem);
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: 500;
     font-family: 'Outfit', sans-serif;
     text-decoration: none;
     border-radius: 1.8rem;
-    background: #e8e8e8;
+    background: var(--bg-color);
     cursor: pointer;
-    border: 0.1rem solid #e8e8e8;
-    transition: all 0.3s;
-    box-shadow:
-        6px 6px 12px #c5c5c5,
-        -6px -6px 12px #ffffff;
+    border: 0.1rem solid var(--bg-color);
+    transition: all 0.35s;
+    box-shadow: var(--box-shadow)
 }
 
-button:hover {
-    box-shadow:
-        0px 0px 0px #c5c5c5,
-        0px 0px 0px #ffffff,
-        inset 4px 4px 12px #c5c5c5,
-        inset -4px -4px 12px #ffffff;
+.btn:hover {
+    box-shadow: var(--hover-box-shadow);
 }
