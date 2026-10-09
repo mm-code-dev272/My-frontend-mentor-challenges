@@ -154,7 +154,7 @@ td {
 }
 
 .nutrition {
-    margin-bottom: 2.5rem !important;
+    padding-bottom: 2.5rem;
 }
 
 .attribution {
@@ -217,7 +217,7 @@ td {
     }
 
     .nutrition {
-        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .attribution {
