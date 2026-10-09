@@ -71,11 +71,6 @@ body {
     text-align: center;
 }
 
-.user:hover {
-    color: rgb(254, 148, 0);
-    transition: all 0.35s;
-}
-
 /* svg section */
 
 /* From Uiverse.io by CYBWEBALI ; note : I changed somethings for my project. */

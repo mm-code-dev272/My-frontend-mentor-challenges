@@ -42,6 +42,7 @@ p {
 
 span {
     color: var(--Stone600);
+    font-weight: bold;
 }
 
 li {
