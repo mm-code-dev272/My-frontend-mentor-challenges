@@ -33,8 +33,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL : [Code](https://github.com/mm-code-dev272/My-frontend-mentor-challenges/06-product-preview-card)
-
 - Live Site URL : [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/06-product-preview-card/product-preview-card.html)
 
 ## My process
