@@ -73,10 +73,10 @@ body {
 }
 
 .product-quality {
-    font-size: var(--paragraph);
+    font-size: 1rem;
     font-weight: 500;
     color: var(--Grey);
-    font-variant-caps: all-petite-caps;
+    text-transform: uppercase;
     letter-spacing: 0.5rem;
 }
 
