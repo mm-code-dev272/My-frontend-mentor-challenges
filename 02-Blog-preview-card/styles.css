@@ -87,6 +87,10 @@ body {
     color: var(--yellow-color);
 }
 
+.title-btn:focus {
+    color: var(--yellow-color);
+}
+
 .card-description {
     font-size: 1.3rem;
     font-weight: 500;
@@ -130,7 +134,7 @@ body {
     .card-image {
         border-radius: 1.2rem;
         width: 100%;
-        height: 100%;
+        height: 20rem;
     }
 
     .author-name {
