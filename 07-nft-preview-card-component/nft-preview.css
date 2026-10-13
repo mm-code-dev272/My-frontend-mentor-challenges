@@ -1,0 +1,210 @@
+:root {
+    /* - Primary - */
+
+    --Blue500: hsl(215, 51%, 70%);
+    --Cyan400: hsl(178, 100%, 50%);
+
+    /* - Neutral - */
+
+    /* main BG */
+    --Blue950: hsl(217, 54%, 11%);
+
+    /* card BG */
+    --Blue900: hsl(216, 50%, 16%);
+
+    /* line */
+    --Blue800: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+/* Weights: 300, 400, 600 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem=10px */
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+a:hover {
+    color: var(--Cyan400);
+}
+
+a:focus {
+    color: var(--Cyan400);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Blue950);
+}
+
+.container {
+    background-color: var(--Blue900);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.2rem;
+    margin: auto 2.2rem;
+    border-radius: 1.2rem;
+    gap: 1.8rem;
+}
+
+.card-image-div {
+    position: relative;
+    width: 100%;
+}
+
+.card-image-div a:focus .overlay {
+    opacity: 1;
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.overlay {
+    border-radius: 0.8rem;
+    background-color: var(--Cyan400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+
+.card-image {
+    border-radius: 0.8rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heading {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+
+.description {
+    color: var(--Blue500);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.row-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-div,
+.remaining-time-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.price {
+    color: var(--Cyan400);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.remain-time {
+    color: var(--Blue500);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.creator-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+}
+
+.line {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--Blue800);
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--White);
+}
+
+.creator-name {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.creator-name span {
+    font-size: 1.6rem;
+    color: var(--Blue500);
+    font-weight: 300;
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--White);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.attribution a {
+    color: var(--Blue500);
+}
+
+@media(min-width : 768px) {
+    .container {
+        max-width: 34rem;
+    }
+}
+
+@media(max-width:375px) {
+    .description {
+        /* visually */
+        font-size: 1.65rem;
+    }
+}
