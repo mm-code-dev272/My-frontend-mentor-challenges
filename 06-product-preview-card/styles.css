@@ -48,7 +48,7 @@ body {
     gap: 2rem;
     border-radius: 0.8rem;
     background-color: var(--White);
-    margin: 1.5rem;
+    margin: auto 1.5rem;
 }
 
 .card-image {
@@ -135,9 +135,9 @@ body {
 }
 
 .attribution {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
-    margin: 3rem 0;
+    padding: 1rem;
 }
 
 .attribution a {
