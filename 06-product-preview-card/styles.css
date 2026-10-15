@@ -47,7 +47,7 @@ body {
     gap: 2rem;
     border-radius: 0.8rem;
     background-color: var(--White);
-    margin: 1.5rem;
+    margin: 4rem 1.5rem;
 }
 
 .card-image {
