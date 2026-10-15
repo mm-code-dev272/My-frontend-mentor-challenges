@@ -37,7 +37,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: var(--Cream);
 }
 
@@ -48,7 +47,7 @@ body {
     gap: 2rem;
     border-radius: 0.8rem;
     background-color: var(--White);
-    margin: auto 1.5rem;
+    margin: 1.5rem;
 }
 
 .card-image {
@@ -149,6 +148,7 @@ body {
         flex-direction: row;
         max-width: 60rem;
         max-height: 42rem;
+        margin: auto;
         gap: 0;
     }
 
