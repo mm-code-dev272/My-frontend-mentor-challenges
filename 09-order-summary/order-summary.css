@@ -1,0 +1,241 @@
+:root {
+    --blue100: hsl(225, 100%, 94%);
+    --blue700: hsl(245, 75%, 52%);
+
+    --blue50: hsl(225, 100%, 98%);
+    --gray600: hsl(224, 23%, 55%);
+    --blue950: hsl(223, 47%, 23%);
+
+    --plan-box: hsla(223, 100%, 93%, 0.230);
+    --card-shadow: hsla(252, 100%, 32%, 0.107);
+    --button-shadow: hsla(245, 75%, 52%, 0.214);
+    --footer-link-color: hsl(228, 45%, 44%);
+    --paragraph-fontsize: 1.6rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Weights: 500, 700, 900 */
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue100);
+    font-family: 'Red Hat Display', system-ui, sans-serif;
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+.card-div {
+    width: 100%;
+    max-width: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+    padding-bottom: 2.5rem;
+    /* 60px at 320px viewport → 90px at 1440px viewport */
+    margin: clamp(6rem, 5.1429rem + 2.6786vw, 9rem) 2.4rem;
+    background-color: var(--blue50);
+    border-radius: 1.8rem;
+    box-shadow: 0 1.5rem 2rem var(--card-shadow);
+
+}
+
+.hero-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.8rem 1.8rem 0 0;
+}
+
+.order-title {
+    padding-top: 1.5rem;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--blue950);
+}
+
+.order-description {
+    font-size: var(--paragraph-fontsize);
+    max-width: 27rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--gray600);
+    line-height: 1.5;
+}
+
+.annual-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 28rem;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    background-color: var(--plan-box);
+    border-radius: 1rem;
+}
+
+.plan-div {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+
+.plan-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.plan-name {
+    color: var(--blue950);
+    font-weight: 900;
+}
+
+.plan-price {
+    color: var(--gray600);
+    font-weight: 700;
+}
+
+.change-link {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--blue700);
+}
+
+.change-link:hover,
+.change-link:focus-visible {
+    text-decoration: none;
+    transition: opacity 0.2s;
+    opacity: 0.7;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.proceed-btn {
+    width: 100%;
+    max-width: 28rem;
+    background-color: var(--blue700);
+    color: white;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    box-shadow: 0 1.5rem 2.5rem var(--button-shadow);
+}
+
+.proceed-btn:hover,
+.proceed-btn:focus-visible {
+    transition: opacity 0.2s;
+    opacity: 0.7;
+}
+
+.cancel-btn {
+    width: 100%;
+    max-width: 28rem;
+    background-color: transparent;
+    border: none;
+    color: var(--gray600);
+    padding: 1.4rem;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus-visible {
+    transition: color 0.2s;
+    color: var(--blue950);
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.attribution a {
+    color: var(--footer-link-color);
+}
+
+@media(min-width : 768px) {
+    body {
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+
+    .card-div {
+        max-width: 45rem;
+        padding-bottom: 4rem;
+    }
+
+    .order-title {
+        font-size: 2.8rem;
+    }
+
+    .card-div .order-description {
+        max-width: 30rem;
+    }
+
+    .annual-plan {
+        max-width: 35rem;
+    }
+
+    .annual-plan .f {
+        gap: 2.5rem;
+    }
+
+    .plan-details {
+        font-size: var(--paragraph-fontsize);
+    }
+
+    .proceed-btn {
+        max-width: 35rem;
+    }
+
+    .attribution {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width : 321px) {
+    .card-div {
+        max-width: 29rem;
+        gap: 2rem;
+    }
+
+    .order-description,
+    .proceed-btn,
+    .cancel-btn {
+        font-size: 1.3rem;
+    }
+
+    .annual-plan,
+    .proceed-btn,
+    .cancel-btn {
+        max-width: 25rem;
+    }
+}
