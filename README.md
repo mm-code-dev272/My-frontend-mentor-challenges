@@ -24,7 +24,9 @@
 | 5 | Recipe Page | [Recipe Page](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) | HTML, CSS|[Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/05-recipe-page/recipe-page.html)|[Code](./05-recipe-page/)|
 | 6 | Product Preview Card | [Product Preview](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa) | HTML, CSS|[Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/06-product-preview-card/product-preview-card.html)|[Code](./06-product-preview-card)|
 | 7 | NFT Preview Card | [NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) | HTML , CSS | [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/07-nft-preview-card-component/nft-preview-card.html) |[Code](./07-nft-preview-card-component/) |
-| 8 | Stats Preview Card | [Stats Preview Card](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) | HTML , CSS | [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/08-stats-preview-card/stats-preview-card.html) | [Code](./08-stats-preview-card/)
+| 8 | Stats Preview Card | [Stats Preview Card](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) | HTML , CSS | [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/08-stats-preview-card/stats-preview-card.html) | [Code](./08-stats-preview-card/) |
+| 9 | Order Summary Component | [Order Summary Component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj) | HTML , CSS | [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/09-order-summary/order-summary.html) | [Code](./09-order-summary/)|
+
 
 
 
