@@ -61,7 +61,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 0.3rem solid var(--txt-color);
     background-color: var(--bg-color);
     box-shadow: var(--box-shadow);
     border: none;
