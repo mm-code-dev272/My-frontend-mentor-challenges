@@ -2,7 +2,7 @@
     color-scheme: light;
     --bg-color: #e8e8e8;
     --txt-color: #090909;
-    --accent: #0092e4;
+    --accent: #003A9E;
     --light-shadow-u: #ffffff;
     --light-shadow-d: #c5c5c5;
     --box-shadow:
@@ -49,7 +49,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     min-height: 100dvh;
-    gap: 5rem;
+    gap: clamp(5rem, 4.4286rem + 1.7857vw, 7rem);
     background-color: var(--bg-color);
     font-family: 'Outfit', sans-serif;
 }
@@ -146,6 +146,33 @@ body {
     height: 2.4rem;
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+    /* 310px at 320px viewport → 1000px at 1440px viewport */
+    max-width: clamp(31rem, 11.2857rem + 61.6071vw, 100rem);
+    padding-left: clamp(2rem, 0.2857rem + 5.3571vw, 8rem);
+    margin-left: clamp(0rem, -2.8571rem + 8.9286vw, 10rem);
+}
+
+.workouts-number {
+    /* 40px at 320px viewport → 70px at 1440px viewport */
+    font-size: clamp(4rem, 3.1429rem + 2.6786vw, 7rem);
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace;
+    color: var(--accent);
+}
+
+.workouts-number::after {
+    content: "projects";
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-left: 0.8rem;
+}
+
 .welcome-title {
     color: var(--txt-color);
     font-family: "Bricolage Grotesque", sans-serif;
@@ -154,9 +181,6 @@ body {
     text-align: left;
     line-height: 1;
     font-weight: 700;
-    max-width: clamp(32rem, 12.5714rem + 60.7143vw, 100rem);
-    padding: 0 clamp(2rem, 0.2857rem + 5.3571vw, 8rem);
-    margin: 0 clamp(0rem, -2.8571rem + 8.9286vw, 10rem);
 }
 
 .container {
@@ -245,4 +269,11 @@ button {
 
 .btn:nth-child(8) {
     order: 1;
+}
+
+@media(min-width : 800px) {
+    .title {
+        flex-direction: row;
+        align-items: flex-end;
+    }
 }

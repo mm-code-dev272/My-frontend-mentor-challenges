@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
 
     <base href="https://mm-code-dev272.github.io/My-frontend-mentor-challenges/">
     <!-- Using DeepSeek for scripts -->
@@ -50,7 +51,10 @@
         </div>
     </div>
 
-    <h1 class="welcome-title">Welcome to my workouts gallery</h1>
+    <div class="title">
+        <h1 class="welcome-title">Welcome to my workouts gallery</h1>
+        <p class="workouts-number"></p>
+    </div>
 
     <div class="container">
 
@@ -94,27 +98,21 @@
         const toggleBtn = document.getElementById('theme-btn');
         const icon = document.getElementById('theme-icon');
         const systemDark = matchMedia('(prefers-color-scheme: dark)');
-
         function getCurrentTheme() {
             return html.getAttribute('data-theme') || 'light';
         }
-
         function updateIcon() {
             const isDark = getCurrentTheme() === 'dark';
             icon.src = isDark ? 'sun.png' : 'moon.png';
             toggleBtn.setAttribute('aria-pressed', isDark);
         }
-
         updateIcon();
-
-
         toggleBtn.addEventListener('click', () => {
             const next = getCurrentTheme() === 'dark' ? 'light' : 'dark';
             html.setAttribute('data-theme', next);
             localStorage.setItem('theme', next);
             updateIcon();
         });
-
         systemDark.addEventListener('change', () => {
             if (localStorage.getItem('theme') === 'system') {
                 const effective = systemDark.matches ? 'dark' : 'light';
@@ -122,6 +120,8 @@
                 updateIcon();
             }
         });
+        const count = document.querySelectorAll('.btn').length;
+        document.querySelector('.workouts-number').textContent = String(count).padStart(2, '0');
     </script>
 </body>
 
