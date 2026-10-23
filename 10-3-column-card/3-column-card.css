@@ -1,0 +1,153 @@
+:root {
+
+    /* Primary */
+
+    --gold500: hsl(31, 77%, 52%);
+    --cyan800: hsl(184, 100%, 22%);
+    --green950: hsl(179, 100%, 13%);
+
+    /* Neutral */
+
+    /* paragraphs */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --gray100: hsl(0, 0%, 95%);
+
+    --font-size: 0.9375rem;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    background-color: var(--gray100);
+}
+
+h1 {
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--gray100);
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--transparent-white);
+    font-size: var(--font-size);
+    line-height: 1.8;
+}
+
+button {
+    font-family: inherit;
+    font-size: var(--font-size);
+    background-color: var(--gray100);
+    border-radius: 1.75rem;
+    padding: 1rem 2.25rem;
+    border: 0.125rem solid var(--gray100);
+}
+
+button:hover {
+    color: var(--gray100) !important;
+    background-color: transparent;
+}
+
+img {
+    width: 4.125rem;
+    height: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* 290px at 320px viewport → 360px at 440px viewport */
+    max-width: clamp(18.125rem, 6.4583rem + 58.3333vw, 22.5rem);
+    margin: 5.5rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.sedans,
+.suv,
+.luxury {
+    padding: 2.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.1875rem;
+}
+
+.sedans {
+    background-color: var(--gold500);
+}
+
+.sedans button {
+    color: var(--gold500);
+}
+
+.suv {
+    background-color: var(--cyan800);
+}
+
+.suv button {
+    color: var(--cyan800);
+}
+
+.luxury {
+    background-color: var(--green950);
+}
+
+.luxury button {
+    color: var(--green950);
+}
+
+.attribution {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width:37.5em) {
+    .container {
+        max-width: 26.875rem;
+    }
+
+    .attribution {
+        font-size: 0.875rem;
+    }
+}
+
+@media only screen and (min-width : 48.0625em) {
+    .container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin: auto;
+        max-width: 57.5rem;
+        min-height: 31.25rem;
+    }
+
+    button {
+        margin-top: 2.25rem;
+    }
+
+    .attribution {
+        font-size: 0.875rem;
+    }
+}
