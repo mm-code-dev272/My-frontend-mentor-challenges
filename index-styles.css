@@ -148,9 +148,8 @@ body {
 
 .title {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     gap: 3rem;
-    align-items: flex-start;
     /* 310px at 320px viewport → 1000px at 1440px viewport */
     max-width: clamp(31rem, 11.2857rem + 61.6071vw, 100rem);
     padding-left: clamp(2rem, 0.2857rem + 5.3571vw, 8rem);
@@ -271,9 +270,9 @@ button {
     order: 1;
 }
 
-@media(min-width : 800px) {
+/* @media(min-width : 800px) {
     .title {
         flex-direction: row;
         align-items: flex-end;
     }
-}
+} */
