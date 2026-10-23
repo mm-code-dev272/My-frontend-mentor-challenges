@@ -8,7 +8,6 @@
 ### 📌 [Live Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/)
 
    You can see all my Frontend Mentor solutions in one place.
-   Last challenge is the first button.
 
 ---
 
