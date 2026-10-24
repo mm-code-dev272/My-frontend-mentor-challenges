@@ -143,6 +143,12 @@ img {
         min-height: 31.25rem;
     }
 
+    .sedans,
+    .suv,
+    .luxury {
+        flex: 33.3%;
+    }
+
     button {
         margin-top: 2.25rem;
     }
