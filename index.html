@@ -91,7 +91,9 @@
         <button class="btn" onclick="document.location='10-3-column-card/3-column-card.html'">
             3-Column Card
         </button>
-
+        <button class="btn" onclick="document.location='11-profile-card/profile-card.html'">
+            Profile card component
+        </button>
     </div>
     <footer style="display: block; margin-top: 10rem;">
 
@@ -106,7 +108,7 @@
         }
         function updateIcon() {
             const isDark = getCurrentTheme() === 'dark';
-            icon.src = isDark ? 'sun.png' : 'moon.png';
+            icon.src = isDark ? 'index-images/sun.png' : 'index-images/moon.png';
             toggleBtn.setAttribute('aria-pressed', isDark);
         }
         updateIcon();

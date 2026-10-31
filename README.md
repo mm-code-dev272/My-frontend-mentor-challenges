@@ -26,6 +26,7 @@
 | 8 | Stats Preview Card | [Stats Preview Card](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) | HTML , CSS | [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/08-stats-preview-card/stats-preview-card.html) | [Code](./08-stats-preview-card/) |
 | 9 | Order Summary Component | [Order Summary Component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj) | HTML , CSS | [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/09-order-summary/order-summary.html) | [Code](./09-order-summary/)|
 | 10 | 3-Column Preview Card Component | [3-column preview card component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-) | HTML , CSS | [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/10-3-column-card/3-column-card.html) | [Code](./10-3-column-card/) |
+| 11 | Profile card component | [Profile card component](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) | HTML , CSS | [Demo](https://mm-code-dev272.github.io/My-frontend-mentor-challenges/11-profile-card/profile-card.html)| [Code](./11-profile-card/)|
 
 
 
